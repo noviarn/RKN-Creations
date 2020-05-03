@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: Century Gothic;
+		}
+		header{
+			background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/home.jpg);
+			background-repeat: no-repeat;
+  			background-size: 100% 100%;
+  			background-position: center;
+			height: 100vh;
+		}
+		ul{
+			float: right;
+			list-style-type: none;
+			margin-top: 25px;
+		}
+		ul li{
+			display: inline-block;
+		}
+		ul li a{
+			text-decoration: none;
+			color: #fff;
+			padding: 5px 20px;
+			border: 1px solid transparent;
+			transition: 0.6s ease;
+		}
+		ul li a:hover{
+			background-color: #fff;
+			color: #000;
+		}
+		ul li.active a{
+			background-color: #fff;
+			color: #000;
+		}
+		.logo img{
+			float: left;
+			width: 110px;
+			height: auto;
+		}
+		.main{
+			max-width: 1200px;
+			margin: auto;
+		}
+		.quote{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.quote h1{
+			font-size: 50px;
+			color: #fff;
+			font-family: Proxima Nova;
+			font-style: italic;
+		}
+		.quote h4{
+			font-size: 15px;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="images/logo.png">
+			</div>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</div>
+		<div class="quote">
+			<h1>"an empty room is a story waiting to happen and you are the author"</h1><br>
+			<h4>- Charlotte Moss</h4>
+		</div>
+	</header>
+</body>
+</html>
